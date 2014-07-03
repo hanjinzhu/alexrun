@@ -1,6 +1,4 @@
 #include "GameScene.h"
-
-USING_NS_CC;
 //生成场景，将层添加到场景上
 Scene* GameLayer::createScene()
 {

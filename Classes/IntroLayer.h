@@ -1,7 +1,7 @@
 #pragma once
 #include "cocos2d.h"
 USING_NS_CC;
-class IntroLayer : public cocos2d::Layer
+class IntroLayer : public Layer
 {
 private:
 	Sprite * IntroBack;
@@ -11,5 +11,5 @@ public:
  
 	void hideScene(float dt);
     //static CCScene* scene();
-    static cocos2d::Scene* createScene();
+    static Scene* createScene();
 };
