@@ -5,10 +5,20 @@
 USING_NS_CC;
 class GameLayer : public Layer
 {
+private:
+	CCPoint startPoint;
+	int _startPointX;
+	int _startPointY;
+	int towards;  //1 up 2 left 3 down 4 right
+	int prevTowards;//1 up 2 left 3 down 4 right
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static Scene* createScene();
-
+	void autoLoadDialog();   ////////////////////这是测试函数
+	void loadMission();
+	virtual bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);//触摸事件监听回调函数
+	virtual void onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
+	
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();  
     

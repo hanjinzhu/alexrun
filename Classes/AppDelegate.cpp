@@ -17,7 +17,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
         glview = GLView::create("Alex GOGOGO");
-		glview->setFrameSize(960,640);//win32调试使用 iphone4:setFrameSize(960,640) iphone5:setFrameSize(1136,640) ipad:setFrameSize(1024,768)
+		glview->setFrameSize(1136,640);//win32调试使用 iphone4:setFrameSize(960,640) iphone5:setFrameSize(1136,640) ipad:setFrameSize(1024,768)
         director->setOpenGLView(glview);
     }
     director->setDisplayStats(false);
