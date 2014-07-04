@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="all" tilewidth="32" tileheight="32">
+  <image source="183711yi7yyhkimequstqp.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="257" name="collidable" tilewidth="32" tileheight="32">
+  <image source="linxin.png" width="32" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="Collidable " value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="258" name="backgross" tilewidth="960" tileheight="640">
+  <image source="back.png" width="960" height="640"/>
+ </tileset>
+ <layer name="background" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwSgYnoCJcWDsBQAKxwAE
+  </data>
+ </layer>
+ <layer name="sprite" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DwgTk0Mnc6Ep6BxodhWgCQXTpQzATEwlAahAVpaC82/9HDv6NgFIwCCGgH4o6BdgQesGOgHTCMAQD9RQ60
+  </data>
+ </layer>
+ <objectgroup name="object" width="30" height="20">
+  <object name="SpawnPoint" x="16" y="16" width="32" height="32"/>
+ </objectgroup>
+ <layer name="meta" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DwAUZG2plLCI/aOwpGwSigFhjs+Wwwu22oAwBgcAA/
+  </data>
+ </layer>
+</map>
